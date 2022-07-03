@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navSection {
+  @apply lg:px-48 dark:bg-slate-800 bg-[#E2E8F0];
+}
+.navContainer {
+  @apply flex items-center dark:bg-slate-800 bg-[#94A3B8] p-3 flex-wrap;
+}
+.logoSection {
+  @apply p-2 mr-4 inline-flex items-center;
+}
+.logo {
+  @apply text-xl text-slate-800 dark:text-white font-bold tracking-wide;
+}
+.menuBtn {
+  @apply dark:text-white text-slate-800 inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none;
+}
+.navRight {
+  @apply hidden  w-full lg:inline-flex lg:flex-grow lg:w-auto;
+}
+.navDiv {
+  @apply lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto;
+}
+.navItem {
+  @apply lg:inline-flex lg:w-auto w-full px-3 py-2 rounded dark:text-gray-400 text-slate-800 items-center justify-center hover:bg-gray-900 hover:text-white;
+}
+
+/* -----------------contentSection-------------- */
+.contentSection {
+  @apply flex flex-wrap flex-col-reverse dark:bg-slate-700 xl:flex-row xl:p-40 bg-[#E2E8F0];
+}
+.contentDiv {
+  @apply mx-auto lg:my-auto;
+}
+.header {
+  @apply text-6xl uppercase font-medium text-center font-serif dark:text-slate-200;
+}
+.subHeader {
+  @apply font-thin text-2xl my-2 text-center dark:text-slate-200;
+}
+.btnDiv {
+  @apply flex m-5 text-center justify-center;
+}
+.btn{
+    @apply hover:scale-110 transition delay-75 duration-200 mx-2 h-14 w-32 rounded-sm hover:bg-slate-900 hover:text-white shadow-md hover:shadow-slate-500
+}
+.btn-1 {
+  @apply bg-slate-600  hover:rounded-lg dark:text-black;
+}
+.btn-2{
+    @apply border-slate-600 hover:rounded-xl bg-transparent
+}
+.btnText{
+    @apply text-xl
+}
+.imgDiv{
+@apply m-auto relative
+}
+.img{
+    @apply xl:scale-150
+}
